@@ -43,7 +43,7 @@ steps:
     arguments: '--no-build --configuration Release --output $(Build.ArtifactStagingDirectory)/Release'
     zipAfterPublish: true
 
-task: WhiteSource Bolt@20
+- task: WhiteSource Bolt@20
   displayName: 'Run WhiteSource Bolt'
 
 - task: PublishBuildArtifacts@1
